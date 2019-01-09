@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTask.Api", "DotNetTask.Api\DotNetTask.Api.csproj", "{B7E79167-B791-4EE3-BEBF-AA9D9A9EC7B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTask.Test", "DotNetTask.Test\DotNetTask.Test.csproj", "{27A1E2F6-DFEE-45C0-B801-5741BF477331}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7E79167-B791-4EE3-BEBF-AA9D9A9EC7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E79167-B791-4EE3-BEBF-AA9D9A9EC7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E79167-B791-4EE3-BEBF-AA9D9A9EC7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E79167-B791-4EE3-BEBF-AA9D9A9EC7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A1E2F6-DFEE-45C0-B801-5741BF477331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A1E2F6-DFEE-45C0-B801-5741BF477331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A1E2F6-DFEE-45C0-B801-5741BF477331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A1E2F6-DFEE-45C0-B801-5741BF477331}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0304BB95-EEB9-4B5A-A66F-6E11C4C06886}
+	EndGlobalSection
+EndGlobal
