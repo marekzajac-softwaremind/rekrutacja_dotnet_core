@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DotNetTask.Data
 {
@@ -30,9 +31,18 @@ namespace DotNetTask.Data
             };
         }
 
-        public void AddAccount(Account account)
+        public void AddAccount(string ownerFirstName, string ownerLastName, Currency currency)
         {
-            Accounts.Add(account);
+            var id = Accounts.Max(x => x.Id) + 1;
+
+            Accounts.Add(Account.Create(id, Owner.Create(ownerFirstName, ownerLastName), currency));
+        }
+
+        public void AddCurrency(string code, string name)
+        {
+            var id = Currencies.Max(x => x.Id) + 1;
+
+            Currencies.Add(Currency.Create(id, code, name));
         }
     }
 }

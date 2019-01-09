@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DotNetTask.Api.Account;
+using DotNetTask.Api.Currency;
+using DotNetTask.Api.Infrastructure;
 using DotNetTask.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +30,8 @@ namespace DotNetTask.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddScoped<IQueryHandler<GetCurrencyQuery, CurrenciesDto>, GetCurrencyQueryHandler>();
+            services.AddScoped<ICommandHandler<CreateAccountCommand>, CreateAccountCommandHandler>();
             services.AddSingleton(new Repository());
         }
 
